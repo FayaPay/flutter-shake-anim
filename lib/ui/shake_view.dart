@@ -22,7 +22,7 @@ class ShakeView extends StatelessWidget {
       child: child,
       builder: (context, child) => Transform.rotate(
           child: child,
-          origin: Offset(10.0, 10.0),
+          origin: Offset(0.0, 0.0),
           angle: (maths.pi / 180) * _anim.value),
     );
   }
