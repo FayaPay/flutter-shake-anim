@@ -28,12 +28,12 @@ class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   int _counter = 0;
 
-  ShakeViewController _shakeController;
+  ShakeController _shakeController;
 
   @override
   void initState() {
     _shakeController =
-        ShakeViewController(vsync: this, duration: Duration(milliseconds: 10));
+        ShakeController(vsync: this, duration: Duration(milliseconds: 10));
     super.initState();
   }
 
