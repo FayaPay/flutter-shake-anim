@@ -32,8 +32,7 @@ class _MyHomePageState extends State<MyHomePage>
 
   @override
   void initState() {
-    _shakeController =
-        ShakeController(vsync: this, duration: Duration(milliseconds: 10));
+    _shakeController = ShakeController(vsync: this);
     super.initState();
   }
 
