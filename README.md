@@ -6,15 +6,14 @@
 
 ## Usage
 
-Create an instance of ShakeController; takes `TickerProvider`, `Duration` as required params, and`tiltAngle` as optional (defaults to 20).
+Create an instance of ShakeController; takes _TickerProvider_ and _Duration_(`Optional`, `default=200 millis`) as params.
 
 ```dart
   ShakeController _shakeController;
 
   @override
   void initState() {
-    _shakeController =
-        ShakeController(vsync: this, duration: Duration(milliseconds: 10));
+    _shakeController = ShakeController(vsync: this);
     super.initState();
   }
 ```
